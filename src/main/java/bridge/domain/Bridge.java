@@ -12,9 +12,14 @@ public class Bridge {
         this.bridge = bridge;
     }
 
+    public int size() {
+        return bridge.size();
+    }
+
     public static Bridge from(List<String> bridge) {
         return new Bridge(
-                bridge.stream().map(BridgeCell::new).toList()
+                bridge.stream().map(value -> new BridgeCell(BridgeCellType.findByValue(value))).toList()
         );
     }
+
 }

@@ -1,16 +1,13 @@
 package bridge.domain;
 
 public class BridgeCell {
-    private final String cellType;
+    private final BridgeCellType cellType;
 
-    public BridgeCell(String cellType) {
-        if (!cellType.equals("D") && !cellType.equals("U")) {
-            throw new IllegalArgumentException("Invalid cell type: " + cellType);
-        }
+    public BridgeCell(BridgeCellType cellType) {
         this.cellType = cellType;
     }
 
-    public String getCellType() {
+    public BridgeCellType getCellType() {
         return cellType;
     }
 }
