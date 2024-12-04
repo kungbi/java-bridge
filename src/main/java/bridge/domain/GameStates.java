@@ -43,4 +43,7 @@ public class GameStates {
         return playerPosition;
     }
 
+    public int getTryCount() {
+        return tryCount;
+    }
 }
