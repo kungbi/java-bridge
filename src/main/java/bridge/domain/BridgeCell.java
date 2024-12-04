@@ -1,13 +1,21 @@
 package bridge.domain;
 
-public class BridgeCell {
-    private final BridgeCellType cellType;
+public enum BridgeCell {
+    UP("U"),
+    DOWN("D");
 
-    public BridgeCell(BridgeCellType cellType) {
-        this.cellType = cellType;
+    private final String value;
+
+    BridgeCell(String value) {
+        this.value = value;
     }
 
-    public BridgeCellType getCellType() {
-        return cellType;
+    public static BridgeCell findByValue(String value) {
+        for (BridgeCell bridgeCellType : BridgeCell.values()) {
+            if (bridgeCellType.value.equals(value)) {
+                return bridgeCellType;
+            }
+        }
+        throw new IllegalArgumentException();
     }
 }

@@ -16,9 +16,13 @@ public class Bridge {
         return bridge.size();
     }
 
+    public BridgeCell get(int index) {
+        return bridge.get(index);
+    }
+
     public static Bridge from(List<String> bridge) {
         return new Bridge(
-                bridge.stream().map(value -> new BridgeCell(BridgeCellType.findByValue(value))).toList()
+                bridge.stream().map(BridgeCell::findByValue).toList()
         );
     }
 
