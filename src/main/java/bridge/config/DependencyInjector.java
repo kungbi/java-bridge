@@ -1,8 +1,8 @@
 package bridge.config;
 
 
-import bridge.InputView;
-import bridge.OutputView;
+import bridge.view.InputView;
+import bridge.view.OutputView;
 import bridge.controller.Controller;
 import bridge.controller.RetryInputUtil;
 import bridge.domain.BridgeMaker;

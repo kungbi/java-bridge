@@ -1,4 +1,4 @@
-package bridge;
+package bridge.view;
 
 import bridge.enums.BridgeCell;
 import bridge.dtos.GameResultDto;

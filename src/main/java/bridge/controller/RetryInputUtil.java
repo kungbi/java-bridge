@@ -1,7 +1,7 @@
 package bridge.controller;
 
-import bridge.InputView;
-import bridge.OutputView;
+import bridge.view.InputView;
+import bridge.view.OutputView;
 import bridge.enums.BridgeCell;
 import bridge.enums.GameCommand;
 import bridge.validator.InputValidator;
