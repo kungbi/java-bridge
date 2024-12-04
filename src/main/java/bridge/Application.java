@@ -1,5 +1,6 @@
 package bridge;
 
+import bridge.config.DependencyInjector;
 import bridge.controller.Controller;
 
 public class Application {
