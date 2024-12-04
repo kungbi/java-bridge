@@ -42,6 +42,10 @@ public class BridgeGame {
         return this.gameStates.isGameOver();
     }
 
+    public boolean isComplete() {
+        return this.gameStates.isComplete();
+    }
+
 
     public GameResultDto getGameResult() {
         return new GameResultDto(
