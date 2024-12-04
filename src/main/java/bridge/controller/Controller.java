@@ -41,14 +41,11 @@ public class Controller {
     }
 
     private void startSingleGame(BridgeGame game) {
-        while (true) {
+        do {
             BridgeCell userAnswer = retryInputUtil.readMoving();
             MapStateDto mapStateDto = game.move(userAnswer);
             outputView.printMap(mapStateDto);
-            if (game.isGameOver() || game.isComplete()) {
-                break;
-            }
-        }
+        } while (!game.isGameOver() && !game.isComplete());
     }
 
 }
