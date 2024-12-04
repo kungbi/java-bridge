@@ -1,5 +1,6 @@
 package bridge.domain;
 
+import bridge.enums.BridgeCell;
 import java.util.List;
 
 public class Bridge {

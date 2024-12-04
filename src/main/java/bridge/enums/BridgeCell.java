@@ -1,4 +1,4 @@
-package bridge.domain;
+package bridge.enums;
 
 public enum BridgeCell {
     UP("U"),
@@ -12,7 +12,7 @@ public enum BridgeCell {
 
     public static BridgeCell findByValue(String value) {
         for (BridgeCell bridgeCellType : BridgeCell.values()) {
-            if (bridgeCellType.value.equals(value)) {
+            if (bridgeCellType.value.equals(value.trim())) {
                 return bridgeCellType;
             }
         }

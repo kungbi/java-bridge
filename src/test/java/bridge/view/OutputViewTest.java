@@ -1,7 +1,7 @@
 package bridge.view;
 
 import bridge.OutputView;
-import bridge.domain.BridgeCell;
+import bridge.enums.BridgeCell;
 import bridge.dtos.GameResultDto;
 import bridge.dtos.MapStateDto;
 import bridge.dtos.MapStateDto.SingleMapState;

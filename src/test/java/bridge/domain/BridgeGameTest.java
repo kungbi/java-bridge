@@ -3,6 +3,7 @@ package bridge.domain;
 import bridge.dtos.GameResultDto;
 import bridge.dtos.MapStateDto;
 import bridge.dtos.MapStateDto.SingleMapState;
+import bridge.enums.BridgeCell;
 import java.util.List;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;

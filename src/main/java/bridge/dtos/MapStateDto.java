@@ -1,6 +1,6 @@
 package bridge.dtos;
 
-import bridge.domain.BridgeCell;
+import bridge.enums.BridgeCell;
 import bridge.domain.MapState;
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package bridge;
 
-import bridge.domain.BridgeCell;
+import bridge.enums.BridgeCell;
 import bridge.dtos.GameResultDto;
 import bridge.dtos.MapStateDto;
 import bridge.dtos.MapStateDto.SingleMapState;
@@ -12,7 +12,7 @@ import java.util.List;
 public class OutputView {
 
     public void printStaringMessage() {
-        System.out.println("다리의 길이를 입력해주세요.");
+        System.out.println("다리 건너기 게임을 시작합니다.");
         printNewLine();
     }
 
@@ -26,6 +26,7 @@ public class OutputView {
         printUpResult(results);
         printNewLine();
         printDownResult(results);
+        printNewLine();
     }
 
     /**
@@ -48,6 +49,7 @@ public class OutputView {
 
     public void printError(String error) {
         System.out.println("[ERROR] " + error);
+        System.out.println();
     }
 
     private void printUpResult(List<SingleMapState> results) {
