@@ -16,6 +16,6 @@ public enum GameCommand {
                 return gameCommand;
             }
         }
-        throw new IllegalArgumentException();
+        throw new IllegalArgumentException("Q 또는 R를 입력해주세요.");
     }
 }

@@ -16,6 +16,6 @@ public enum BridgeCell {
                 return bridgeCellType;
             }
         }
-        throw new IllegalArgumentException();
+        throw new IllegalArgumentException("U 또는 D를 입력해주세요.");
     }
 }
