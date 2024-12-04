@@ -46,6 +46,10 @@ public class OutputView {
         printNewLine();
     }
 
+    public void printError(String error) {
+        System.out.println("[ERROR] " + error);
+    }
+
     private void printUpResult(List<SingleMapState> results) {
         System.out.print("[ ");
         for (int i = 0; i < results.size(); i++) {
